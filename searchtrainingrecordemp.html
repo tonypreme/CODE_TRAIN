@@ -1,0 +1,819 @@
+<!DOCTYPE html  >
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Mofi admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities."/>
+    <meta name="keywords" content="admin template, Mofi admin template, dashboard template, flat admin template, responsive admin template, web app"/>
+    <meta name="author" content="pixelstrap"/>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"/>
+    <title>Document Flow</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css"/>
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/icofont.css"/>
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css"/>
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/flag-icon.css"/>
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css"/>
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/quill.snow.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/datatables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
+    
+    
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css"/>
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen"/>
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css"/>
+    <style>
+         .dt-button {
+            background-color: white !important;
+            color: black !important;
+        }
+    </style>
+  </head>
+  <body> 
+    <div class="loader-wrapper"> 
+      <div class="loader loader-1">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="loader-inner-1"></div>
+      </div>
+    </div>
+    <!-- loader ends-->
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <div class="page-header row">
+        <div class="header-logo-wrapper col-auto">
+          <div class="logo-wrapper"><a href="index.html">
+            <img class="img-fluid for-light" src="assets/images/logo/logo.png" alt=""/><img class="img-fluid for-dark" src="assets/images/logo/logo_light.png" alt=""/></a></div>
+        </div>
+        <div class="col-4 col-xl-4 page-title">
+          <h4 class="f-w-700">Document Flow</h4>
+          <nav>
+            <ol class="breadcrumb justify-content-sm-start align-items-center mb-0">
+              <li class="breadcrumb-item"><a href="index.html"> <i data-feather="home"> </i></a></li>
+              <li class="breadcrumb-item f-w-400">Search Training Employee</li>
+              <!-- <li class="breadcrumb-item f-w-400 active">Hide Menu On Scroll</li> -->
+            </ol>
+          </nav>
+        </div>
+        <!-- Page Header Start-->
+        <div class="header-wrapper col m-0">
+          <div class="row">
+            <form class="form-inline search-full col" action="#" method="get">
+              <div class="form-group w-100">
+                <div class="Typeahead Typeahead--twitterUsers">
+                  <div class="u-posRelative">
+                    <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Document" name="q" title="" autofocus>
+                    <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                  </div>
+                  <div class="Typeahead-menu"></div>
+                </div>
+              </div>
+            </form>
+            <div class="header-logo-wrapper col-auto p-0">
+              <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="assets/images/logo/logo.png" alt=""></a></div>
+              <div class="toggle-sidebar">
+                <svg class="stroke-icon sidebar-toggle status_toggle middle">
+                  <use href="assets/svg/icon-sprite.svg#toggle-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
+              <ul class="nav-menus">
+                <li>                         <span class="header-search">
+                    <svg>
+                      <use href="assets/svg/icon-sprite.svg#search"></use>
+                    </svg></span></li>
+                <li>
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="u-posRelative d-flex align-items-center">
+                        <!-- <svg class="search-bg svg-color"> 
+                          <use href="assets/svg/icon-sprite.svg#search"></use>
+                        </svg> -->
+                        <!-- <input class="demo-input py-0 Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Document" name="q" title=""> -->
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
+                
+            
+                
+                <li class="profile-nav onhover-dropdown px-0 py-0">
+                  <div class="d-flex profile-media align-items-center"><img class="img-30" src="assets/images/dashboard/profile.png" alt="">
+                    <div class="flex-grow-1"><span id="empname"></span>
+                      <p class="mb-0 font-outfit" id="departmentname"><i class="fa fa-angle-down"></i></p>
+                    </div>
+                  </div>
+                  <ul class="profile-dropdown onhover-show-div">
+                    <li><a href="login.html"><i data-feather="log-in"> </i><span>Log out</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <script class="result-template" type="text/x-handlebars-template">
+              <div class="ProfileCard u-cf">                        
+              <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0">
+                <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
+              <div class="ProfileCard-details">
+              <div class="ProfileCard-realName">{{name}}</div>
+              </div>
+              </div>
+            </script>
+            <script class="empty-template" type="text/x-handlebars-template">
+              <div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div>
+            </script>
+          </div>
+        </div>
+        <!-- Page Header Ends                              -->
+      </div>
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+        <div class="sidebar-wrapper" data-layout="stroke-svg">
+          <div>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="assets/images/logo/logo_light.png" alt=""></a>
+              <div class="back-btn"><i class="fa fa-angle-left"></i></div>
+              <div class="toggle-sidebar">
+                <svg class="stroke-icon sidebar-toggle status_toggle middle">
+                  <use href="assets/svg/icon-sprite.svg#toggle-icon"></use>
+                </svg>
+                <svg class="fill-icon sidebar-toggle status_toggle middle">
+                  <use href="assets/svg/icon-sprite.svg#fill-toggle-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a></div>
+            <nav class="sidebar-main">
+              <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+              <div id="sidebar-menu">
+                <ul class="sidebar-links" id="simple-bar">
+                  
+                 
+                 
+                </ul>
+              </div>
+              <!-- <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div> -->
+            </nav>
+          </div>
+        </div>
+        <!-- Page Sidebar Ends-->
+        <div class="page-body" id="app" v-cloak>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="email-wrap email-main-wrapper">
+              <div class="row">
+                <div class="col-xxl-3 col-xl-4 box-col-12">
+                  <div class="md-sidebar"> 
+                    <!-- <a class="btn btn-primary md-sidebar-toggle" href="javascript:void(0)">email filter</a> -->
+
+                    <div class="md-sidebar-aside job-left-aside custom-scrollbar">
+                      <div class="email-left-aside">
+                        <div class="card theme-scrollbar mb-0">
+                          
+                          <!-- <hr> -->
+                          <div class="card-body">
+                            <h4>Search Training Employee</h4>
+                            <hr>
+                            <div>
+                               <div class="form mt-0">
+                                  <label>Course</label>
+                                  <input @keyup.enter="getdata()" type="text"  v-model="form.keyword" class="form-control">
+                               </div>
+
+
+                               <div class="form mt-3">
+                                  <label>Training Start Date</label>
+                                  <input @keyup.enter="getdata()" type="date"  v-model="form.startdate" class="form-control">
+                               </div>
+
+                                <div class="form mt-3">
+                                  <label>Training End Date</label>
+                                  <input @keyup.enter="getdata()" type="date"  v-model="form.enddate" class="form-control">
+                               </div>
+
+
+                               <div class="form mt-3">
+                                  <label>WI/Docno</label>
+                                  <input @keyup.enter="getdata()" type="text"  v-model="form.refdocno" class="form-control">
+                               </div>
+
+                               <div class="form mt-0">
+                                  <label>Employee Id</label>
+                                  <input @keyup.enter="getdata()" type="text"  v-model="form.employeeid" class="form-control">
+                               </div>
+                               
+                                <div class="mt-3">
+                                    <a href="#departmentCollapse" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="departmentCollapse" class="text-decoration-none text-dark d-flex justify-content-between">
+                                        <h6 class="f-w-600">HR Department</h6>
+                                        <i data-feather="chevron-down"></i>
+                                    </a>
+                                    <div class="collapse hide" id="departmentCollapse">
+                                        <div v-for="dep in listdepartment" class="form-check ms-2">
+                                            <input class="form-check-input" type="checkbox" :value="dep.departmentid" v-model="form.departments" :id="'dep' + dep.id">
+                                            <label class="form-check-label" :for="'dep' + dep.id">{{ dep.departmentname }}</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="mt-3">
+                                    <a href="#coursegroupCollapse" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="coursegroupCollapse" class="text-decoration-none text-dark d-flex justify-content-between">
+                                        <h6 class="f-w-600">Course Group</h6>
+                                        <i data-feather="chevron-down"></i>
+                                    </a>
+                                    <div class="collapse hide" id="coursegroupCollapse">
+                                        <div v-for="item in listcoursegroup" class="form-check ms-2">
+                                            <input class="form-check-input" type="checkbox" :value="item.coursegroupcode" v-model="form.coursegroups" :id="'cg' + item.id">
+                                            <label class="form-check-label" :for="'cg' + item.id">{{ item.coursegroupname }}</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                   <div class="mt-3">
+                                    <a href="#coursemaingroupCollapse" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="coursemaingroupCollapse" class="text-decoration-none text-dark d-flex justify-content-between">
+                                        <h6 class="f-w-600">Course Department/Function</h6>
+                                        <i data-feather="chevron-down"></i>
+                                    </a>
+                                    <div class="collapse hide" id="coursemaingroupCollapse">
+                                        <div v-for="item in listcoursemaingroup" class="form-check ms-2">
+                                            <input class="form-check-input" type="checkbox" :value="item.coursemaingroupcode" v-model="form.coursemaingroups" :id="'cgm' + item.id">
+                                            <label class="form-check-label" :for="'cgm' + item.id">{{ item.coursemaingroupname }}</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                                
+
+                               <div class="mt-3">
+                                <a href="#" @click="getdata()" class="btn btn-primary">Search</a>
+                                <a href="#" @click="resetfind()" class="btn btn-secondary">Reset</a>
+                               </div>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-9 col-xl-8 box-col-12">
+                  <div class="email-right-aside">
+                    <div class="card-body pt-0 projects px-0">
+                      <div class="card email-body email-list">
+                        <div class="card">
+                          <div class="card-header card-no-border pb-0">
+                            <div class="header-top">
+                              <h4>Training Search</h4>
+                              <!-- <div class="dropdown icon-dropdown">
+                                <button class="btn dropdown-toggle" id="userdropdown0" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown0"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
+                              </div> -->
+                            </div>
+                          </div>
+                          <div class="card-body pt-0 projects px-0" >
+                            <div class="table-responsive theme-scrollbar" style="padding: 20px;">
+                              <table class="table display" id="tabledata" style="width:100%">
+                                <thead>
+                                  <tr> 
+                                    <!-- <th> 
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label"></label>
+                                      </div>
+                                    </th> -->
+                                    <th>Employee Id</th>
+                                    <th>Employee Name</th>
+                                    <th>HR<br>Department</th>
+                                    <th>Course</th>
+                                    <th>WI/Doc</th>
+                                    <th>Group</th>
+                                    <th>Department<br> and Function</th>
+                                    <th>Train Date</th>
+                                    <th>Score<br>Pre-test</th>
+                                    <th>Score<br>Post-test</th>
+                                                                        <!-- <th>Action</th> -->
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                
+                                 
+                                  
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Container-fluid Ends-->
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 footer-copyright d-flex flex-wrap align-items-center justify-content-between">
+                <p class="mb-0 f-w-600">Copyright <span class="year-update"> </span> © Docflow  </p>
+                <p class="mb-0 f-w-600">Document Flow
+                  <!-- <svg class="footer-icon">
+                    <use href="assets/svg/icon-sprite.svg#footer-heart"> </use>
+                  </svg> -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="assets/js/scrollbar/simplebar.js"></script>
+    <script src="assets/js/sidebar-menu-load.js"></script>
+    <script src="assets/js/scrollbar/custom.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="assets/js/config.js"></script>
+    <!-- Plugins JS start-->
+    <!-- <script src="assets/js/sidebar-menu.js"></script> -->
+    <script src="assets/js/sidebar-pin.js"></script>
+    <script src="assets/js/slick/slick.min.js"></script>
+    <script src="assets/js/slick/slick.js"></script>
+    <script src="assets/js/header-slick.js"></script>
+    <!-- calendar js-->
+    <script src="assets/js/letter-box/custom-mail-pagination.js"></script>
+    <script src="assets/js/letter-box/custom-usermail.js"> </script>
+    <script src="assets/js/editors/quill.js"></script>
+    <script src="assets/js/editors/custom-quill.js"></script>
+    <script src="assets/js/print.js"></script>
+    <script src="assets/js/tooltip-init.js"></script>
+    <!-- Plugins JS Ends-->
+
+    <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/js/datatable/datatables/datatable.custom.js"></script>
+    <script src="assets/js/datatable/datatables/datatable.custom1.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+
+    <!-- Theme js-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script1.js"></script>
+    <!-- <script src="assets/js/theme-customizer/customizer.js"></script> -->
+    <!-- Plugin used-->
+    <script src="js_other/axios.min.js"></script>
+    <script src="js/jquery.blockui.min.js"></script>
+    <script src="js_other/vue.js"></script>
+    <script src="js/apiserver.js"></script>
+    <script src="js_other/numeral.js"></script>
+    <script src="js/misc.js"></script>
+
+        <script src="js/checklogin.js"></script>
+        
+      <script>
+          checklogin();
+      </script> 
+      <script type="module">
+        import { getuserinfo } from './js/manageuser.js';
+        import { showformatint,logoff,showformatdate,
+            showformatdatesave,showformatmoney,showformatdatetime
+         } from './js/miscvue.js';
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                records: [],
+                message: '',
+                listcompany:[],
+                listdepartment:[],
+                listcoursemaingroup:[],
+                listcoursegroup:[],
+                datacomment:[],
+                divcount:0,
+                statussupervisor:false,
+                statusadmin:false,
+                name:'',
+                userid:'',
+                userempid:'',
+                userdepartmentid:'',
+                userempname:'',
+                userdepartmentname:'',
+                userpic:'',
+                useradminlevel:'',
+                form: {
+                    keyword: "",
+                    startdate:"",
+                    enddate:"",
+                    refdocno:"",
+                    employeeid:"",
+                    departments: [],
+                    coursegroups:[],
+                    coursemaingroups:[],
+                }
+            },
+            methods: {
+              async setdata(){
+                
+                let useridapp="";
+
+                 console.log(`${apiserver}controller/showdata.php?typelink=applevel&userid=${app.userid}&applicationid=quotationsales`)
+                 await axios.get(`${apiserver}controller/showdata.php?typelink=applevel&userid=${app.userid}&applicationid=quotationsales`
+                      , {}).then(function(res) {
+                      console.log(res.data);
+                      console.log(res.data.length);
+                      
+                       if(res.data.length){
+                          
+                          app.useradminlevel=res.data[0].adminlevel
+                          if(app.useradminlevel==appleveluser || app.useradminlevel==applevelsup){
+                              // let btnadd = document.getElementById("btnadd");
+                              // btnadd.style.setProperty("display","none")
+                          }  
+                           
+                       }
+                       else{
+                        // wait app training
+                        //  alert("ไม่สามารถเข้าใช้งานได้ กรุณาติดต่อผู้ดูแลระบบ")
+                        //  location.href="index.html";
+                       }
+
+                    });
+
+
+        
+
+                  console.log(`${apiserver}controller/showdata.php?typelink=coursegroup`)
+                await axios.post(`${apiserver}controller/showdata.php?typelink=coursegroup`
+                  , {}).then(function(res) {
+                  console.log(res.data);
+                  app.listcoursegroup= res.data;
+                  // app.form.departments=res.data;
+                  })
+
+                   console.log(`${apiserver}controller/showdata.php?typelink=coursemaingroup`)
+                await axios.post(`${apiserver}controller/showdata.php?typelink=coursemaingroup`
+                  , {}).then(function(res) {
+                  console.log(res.data);
+                  app.listcoursemaingroup= res.data;
+                  // app.form.departments=res.data;
+                  })
+
+                   console.log(`${apiserver}controller/showdata.php?typelink=department`)
+                await axios.post(`${apiserver}controller/showdata.php?typelink=department`
+                  , {}).then(function(res) {
+                  console.log(res.data);
+                  app.listdepartment= res.data;
+                  // app.form.departments=res.data;
+                  })
+
+
+
+                     // default date
+                    const now = new Date();
+
+                  // 2. Calculate startdate (Now - 30 days)
+                  const startDate = new Date(now);
+                  startDate.setDate(now.getDate() - 30);
+                  this.form.startdate= this.showformatdatesave(startDate)
+
+                  // 3. Calculate enddate (Now + 1 day)
+                  const endDate = new Date(now);
+                  endDate.setDate(now.getDate() + 1);
+                  this.form.enddate = this.showformatdatesave(endDate)
+      
+      
+                },
+      
+                
+              async getdata() {
+      
+                let useridapp="";
+                let empid="";
+                // empid =this.userempid;
+                // if(this.useradminlevel==appleveluser){
+                //   useridapp=app.userid;
+                // }
+
+                
+
+
+                
+      
+                  // $('#tabledata').dataTable().clear();
+      
+                  let skeyword = "";
+      
+                  skeyword = this.form.keyword;
+      
+                  // let companyid="";
+                  // companyid= this.form.selectcompanyid;
+      
+                  // if(companyid=="(ทั้งหมด)"){companyid="";}
+                  let sstartdate = this.form.startdate;
+                  let senddate = this.form.enddate;
+                  let srefdocno = this.form.refdocno;
+                  let semployeeid = this.form.employeeid;
+                  let departments = this.form.departments.map(d => `'${d}'`).join(',');
+                  let coursegroups = this.form.coursegroups.map(d => `'${d}'`).join(',');
+                  let coursemaingroups = this.form.coursemaingroups.map(d => `'${d}'`).join(',');
+
+                  console.log(`${apiserver}controller/training/showdata.php?typelink=reporttrainingrecord&keyword=${skeyword}&startdate=${sstartdate}&enddate=${senddate}&refdocno=${srefdocno}&empid=${semployeeid}`);
+                  // return;
+
+
+                  const formData = new FormData();
+
+                  formData.append('departments',departments);
+                  formData.append('coursegroups', coursegroups );
+                  formData.append('coursemaingroups', coursemaingroups);
+      
+                  await axios.post(`${apiserver}controller/training/showdata.php?typelink=reporttrainingrecord&keyword=${skeyword}&startdate=${sstartdate}&enddate=${senddate}&refdocno=${srefdocno}&empid=${semployeeid}`
+                  ,formData, {}).then(function(res) {
+                  console.log(res.data);
+                  app.records = res.data;
+                  
+                  var otablesap = $("#tabledata");
+                  // otablesap.DataTable().clear();
+                  
+                              otablesap.DataTable ({
+                                  "data" : app.records,
+                                  "bDestroy": true,
+                                  "oLanguage": {
+                                      "sSearch": "search in table"
+                                      },
+                                "paging": true,
+                                "searching": true,
+                                "info": true,
+                                "order": [[0, 'asc']],
+                                dom: 'Bfrtip',
+                                buttons: [
+                                    'excel', 'print'
+                                ],
+                                  "columns" : [
+                                      { "data" : "empcardid" ,
+                                      render: function ( data, type, row, meta ) {
+                                      // let result;  
+                                      
+                                      // if(data=="" || data==null){
+                                      //   result =row.employeeid;
+                                      // }
+                                      // else {
+                                      //   result =data;
+                                      // }
+
+                                      let resultdata;  
+                                      
+                                      if(data=="" || data==null){
+                                        resultdata =row.employeeid;
+                                      }
+                                      else {
+                                        resultdata =data;
+                                      }
+
+                                       let result="";
+                                      if(app.useradminlevel=="99"){
+                                         result=`<div>
+                                              <a  href='trainingrecorddetail.html?id=${row.id}&docno=${row.docno}'>
+                                              <span style='font-weight:bold;'> ${resultdata}</span>
+                                              </a>
+                                              <br>
+                                              <a  href='font-weight:bold;' onclick='app.deletedoc("${row.id}","${row.docno}")'>
+                                              <span style='color:red;'>DEL</span>
+                                              </a>
+                                           </div>
+                                           `;
+                                      }
+                                      else{
+                                          result=`<a  href='trainingrecorddetail.html?id=${row.id}&docno=${row.docno}'>
+                                          <span style='font-weight:bold;'> ${resultdata}</span>
+                                           </a>
+                                           `;
+                                      }
+                                      
+                                      
+                                        
+                                    
+                                    return result ;
+                                  }},
+                                    { "data" : "empname" ,
+                                      render: function ( data, type, row, meta ) {
+                                      let result;  
+                                      
+                                      if(data=="" || data==null){
+                                        result =row.employeeid;
+                                      }
+                                      else {
+                                        result =data;
+                                      }
+                                      
+                                      
+                                        
+                                    
+                                    return result ;
+                                  }},
+                                  { "data" : "departmentname" },
+                                     { "data" : "coursename" ,render: function ( data, type, row, meta ) {
+                                      
+                                      let result="";
+                                      result =data
+                                      // if(app.useradminlevel=="99"){
+                                      //    result=`<div>
+                                      //         <a  href='trainingrecorddetail.html?id=${row.id}&docno=${row.docno}'>
+                                      //         <span style='font-weight:bold;'> ${data}</span>
+                                      //         </a>
+                                      //         <br>
+                                      //         <a  href='font-weight:bold;' onclick='app.deletedoc("${row.id}","${row.docno}")'>
+                                      //         <span style='color:red;'>DEL</span>
+                                      //         </a>
+                                      //      </div>
+                                      //      `;
+                                      // }
+                                      // else{
+                                      //     result=`<a  href='trainingrecorddetail.html?id=${row.id}&docno=${row.docno}'>
+                                      //     <span style='font-weight:bold;'> ${data}</span>
+                                      //      </a>
+                                      //      `;
+                                      // }
+                                      
+
+                                      return result;
+                                    ;
+                                 } },{ "data" : "refdocno" },
+                                      { "data" : "coursegroupname" },
+                                       { "data" : "coursemaingroupname" },
+                                     { "data" : "startdate" ,render: function ( data, type, row, meta ) {
+                                      
+                                       if(type=="display"){
+                                        return app.showformatdate(data);
+                                        // return showformatdatetime(data);
+                                       }
+                                       else{
+                                         return data;
+                                       }
+      
+                                     ;
+                                  }},
+                                   { "data" : "scorepretest" ,render: function ( data, type, row, meta ) {
+                                      
+                                       if(type=="display"){
+                                        return app.showformatint(data);
+                                        // return showformatdatetime(data);
+                                       }
+                                       else{
+                                         return data;
+                                       }
+      
+                                     ;
+                                  }},
+                                   { "data" : "scoreposttest" ,render: function ( data, type, row, meta ) {
+                                      
+                                       if(type=="display"){
+                                        return app.showformatint(data);
+                                        // return showformatdatetime(data);
+                                       }
+                                       else{
+                                         return data;
+                                       }
+      
+                                     ;
+                                  }},
+                                  
+                
+                                  ]
+                              });
+                  });
+      
+      
+      
+      
+      
+                  },
+                  resetfind(){
+                     location.reload()
+                  }
+     
+                 ,async deletedoc(id,docno){
+
+                      if(!confirm("คุณต้องการลบข้อมูลเอกสาร " + docno + " นี้หรือไม่")){
+                        return;
+                      }
+                                                                  
+                    
+                    const formData = new FormData();
+                    // formData.append('id', this.id);
+
+                    formData.append('docno', docno);
+                    formData.append('id', id);
+
+                    
+
+                    // console.log(`${apiserver}controller/document/deletedoc.php`);
+                    await axios.post(`${apiserver}controller/training/trainingrecord/deletedoc.php`
+                        , formData, {}
+                    ).then(function (res) {
+                        // console.log(res.data);
+                      
+                        if (res.data == "success") {
+                            
+                          
+                            alert("บันทึกข้อมูลเรียบร้อยแล้ว")
+                            app.getdata();
+
+                           
+                            // location.href="approve.html"
+                        }
+                        else{
+                          alert(res.data)
+                        }
+
+                        //app.form.listdep = res.data;
+                    });
+
+                 },
+             showdocstatus(docstatus){
+              let result="";
+
+              if(docstatus=="Y"){
+                 result=`<span style='color:green;'>อนุมัติ</span>`
+              }
+              else if(docstatus=="N"){
+                 result=`<span style='color:red;'>ไม่อนุมัติ</span>`
+              }
+              else{
+                result=`<span style='color:blue;'>รออนุมัติ</span>`
+              }
+
+              return result;
+
+            }
+            
+            
+             ,showformatint: showformatint
+            ,showformatdate: showformatdate
+            ,showformatdatesave: showformatdatesave
+            ,showformatmoney: showformatmoney
+            ,showformatdatetime: showformatdatetime
+            ,logoff: logoff
+      
+            },
+          async created() {
+      
+              
+             
+      
+               
+               
+               await getuserinfo(this);
+               await this.setdata();
+               await this.getdata();
+              
+      
+              //  alert("ok")
+             
+              
+                
+            }
+        })
+      </script>
+      
+
+  </body>
+</html>
