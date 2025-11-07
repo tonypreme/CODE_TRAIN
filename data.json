@@ -1,0 +1,67 @@
+{
+  "employees": [
+    {
+      "empcardid": "00001",
+      "name": "John Doe",
+      "jobtitle": "Software Engineer",
+      "departmentname": "IT",
+      "courses": [
+        {"name": "Vue.js Basics", "completed": true, "startDate": "2023-01-10", "endDate": "2023-01-12"},
+        {"name": "Advanced SQL", "completed": false, "startDate": "2023-02-15", "endDate": "2023-02-17"}
+      ]
+    },
+    {
+      "empcardid": "00002",
+      "name": "Jane Smith",
+      "jobtitle": "Project Manager",
+      "departmentname": "PMO",
+      "courses": [
+        {"name": "Project Management 101", "completed": true, "startDate": "2023-03-01", "endDate": "2023-03-03"},
+        {"name": "Vue.js Basics", "completed": true, "startDate": "2023-01-10", "endDate": "2023-01-12"}
+      ]
+    },
+    {
+      "empcardid": "00003",
+      "name": "Peter Jones",
+      "jobtitle": "Designer",
+      "departmentname": "Design",
+      "courses": [
+        {"name": "UI/UX Principles", "completed": true, "startDate": "2023-04-20", "endDate": "2023-04-22"},
+        {"name": "Vue.js Basics", "completed": false, "startDate": "2023-01-10", "endDate": "2023-01-12"}
+      ]
+    },
+    {
+      "empcardid": "00004",
+      "name": "Alice Brown",
+      "jobtitle": "HR Specialist",
+      "departmentname": "HR",
+      "courses": [
+        {"name": "Recruitment Strategies", "completed": true, "startDate": "2023-05-15", "endDate": "2023-05-17"},
+        {"name": "Project Management 101", "completed": false, "startDate": "2023-03-01", "endDate": "2023-03-03"}
+      ]
+    }
+  ],
+  "departments": [
+    { "departmentname": "IT" },
+    { "departmentname": "PMO" },
+    { "departmentname": "Design" },
+    { "departmentname": "HR" }
+  ],
+  "coursegroups": [
+    { "coursegroupname": "Technical" },
+    { "coursegroupname": "Soft Skills" },
+    { "coursegroupname": "Management" }
+  ],
+  "coursemain": [
+      { "coursemaingroupname": "Programming" },
+      { "coursemaingroupname": "Communication" },
+      { "coursemaingroupname": "Design Tools" }
+  ],
+  "availableCourses": [
+    {"name": "Vue.js Basics"},
+    {"name": "Advanced SQL"},
+    {"name": "Project Management 101"},
+    {"name": "UI/UX Principles"},
+    {"name": "Recruitment Strategies"}
+  ]
+}
